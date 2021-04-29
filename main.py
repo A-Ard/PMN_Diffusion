@@ -43,4 +43,4 @@ def T(t,x):
     return T
 
 
-plt.show()
+
