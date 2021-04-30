@@ -1,12 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-N=60
+N=677
 D=0.1
 h=0.1
 g=0.05
-T_1=62
-T_11=181
+T_1=62.0
+T_11=181.0
 
 
 T=np.full((N+1,11),fill_value=T_1)
@@ -18,7 +18,7 @@ for j in range(0,N+1):
     T[j, 0] = T_1
     T[j, 10] = T_11
 
-for j in range(1,N):
+for j in range(0,N):
     for i in range(1, 10):
         T[j+1,i]=(T[j,i+1]+T[j,i-1])/2
 
