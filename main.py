@@ -46,7 +46,7 @@ ax = Axes3D(fig)
 ax.scatter(t, x, T)
 
 
-plt.show()
+plt.savefig('wykres.png')
 
 
 
